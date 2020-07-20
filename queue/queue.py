@@ -140,20 +140,18 @@ Stretch: What if you could only use instances of your Stack class to implement t
          What would that look like? How many Stacks would you need? Try it!
 """
 
-# 1. Implement the Queue class using an array as the underlying storage structure.
-
 
 class Queue(LinkedList):
     def __init__(self):
         super().__init__()
         self.size = 0
 
-    def __len__(self):
-        return self.size
+    def __len__(self)
+    return self.size
 
     def enqueue(self, value):
-        self.add_to_head(value)
         self.size += 1
+        return self.add_to_head(value)
 
     def dequeue(self):
         if self.size > 0:
